@@ -5,7 +5,7 @@ Instructions for setting up your environment and running the jupyter notebooks
 
 1. Create a virtual environment called 'flood_depths' with
 
-```conda env create -f environment.yml
+`conda env create -f environment.yml`
 
 2. Activate your environment with 
 
