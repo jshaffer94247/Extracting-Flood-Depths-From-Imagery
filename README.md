@@ -9,11 +9,11 @@ Flooding is one the most common and most destructive forms of natural disaster. 
 
 ## Executive Summary OR Abstract
 ---
-
+Teaching a computer to detect water much less a water line is something that has troubled for researcher for years per the attached research library.  As a result, we chose to leverage the Google Vision AI to act as an image preprocessor that would identify prerequisite objects and flooding.  By verifying those conditions, we could train a convuluted neural network using VGG16 to identify the level of submersion of those specific objects.  Based on the interpretation of that submersion level we could infer a relative depth of the flood water.
 
 ## Data
 ---
-https://docs.google.com/document/d/1p74Q2P8alsDMn7t_SStoAjlu6nj5iP8MUyruClTQPMs/edit?usp=sharing - Resource doc
+In order to train our neural network we required a large quantity and variety of flood images.  Several research projects had large libraries of training images for their respective model
 
 ## Image Processing
 ---
@@ -23,7 +23,9 @@ https://docs.google.com/document/d/1p74Q2P8alsDMn7t_SStoAjlu6nj5iP8MUyruClTQPMs/
 
 ## Issues
 ---
-
+1. People can swim
+2. Shortage of training data
+3. 
 
 
 ## Future Improvements
@@ -39,20 +41,23 @@ Project flood level to surrounding area at simliar elevation
 ---
 ```
 |__ code
-|   |__ 01_Google_Vision_API.ipnyb
-|   |__ 02_Parse_Image_Labels.ipynb   
+|   |__ google-vision-api
+|   |   |__ 01_Google_Vision_API.ipnyb
+|   |   |__ 02_Parse_Image_Labels.ipynb
+|   |   |__ README.md
+|   |   |__ output
+|   |   |   |__ labels.csv
 |   |__ 03_Image_Augmentation_Trucks.ipnyb
 |   |__ 04_Flood_Depth_ModelTraining_Trucks.ipynb
 |   |__ 05_Flood_Depth_Prediction_Trucks.ipynb
 |   |__ 06_Image_Augmentation_People.ipynb
 |   |__ 07_Flood_Depth_ModelTraining_People.ipnyb
 |   |__ 08_Flood_Depth_Prediction_People.ipnyb
-|   |__ output
-|   |   |__ labels.csv
 |   |__ README.md
 |__ images (see file tree image below)
 |__ Project_presentation.pdf
 |__ environment.yml
+|__ flood_detection_resources_research_utilities.pdf
 |__ README.md
 ```
 
