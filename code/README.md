@@ -34,6 +34,11 @@ This also means that you can retarget the model to train on an expanded flood de
    -   03_Image_Augmentation_Trucks.ipynb        
    -   06_Image_Augmentation_People.ipynb        
 
+### Build an image processing pipeline
+
+   To enable the building of a completely automated image processing pipeline, we have included a template for using the Google Vision API to first determine if flood waters are present, and then to determine which of the existing models is better suited to determine water depth (people present? trucks present?).
+
+   The code for running the photos through Google Vision is located in the google_vision_api folder.  01_Google_Vision_API.inypb imports the images and runs them through Google Vision.  It then exports the labels for the photos.  02_Parse_Image_labels.ipynb then identifies which photos to use in which model.
 
 ### Build the model(s)
 
@@ -66,7 +71,3 @@ To predict on new images, you will need to place the images into folders accordi
 12. Run all    
 
 Caution: Due to various resource constraints (time, people, training data), the results of this model are not suitable for making life-changing decisions. Using the model to explore machine learning, to making non-binding estimations of flood depths, or for entertainment (Can it predict the depth of the water a horse is standing in?) is acceptable and encouraged.
-
-### Build an image processing pipeline
-
-To enable the building of a completely automated image processing pipeline, we have included a template for using the Google Vision API to first determine if flood waters are present, and then to determine which of the existing models is better suited to determine water depth (people present? trucks present?).
