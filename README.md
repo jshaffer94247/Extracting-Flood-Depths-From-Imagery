@@ -13,7 +13,7 @@ Teaching a computer to detect water much less a water line is something that has
 ---
 In order to train our neural network we required a large quantity and variety of flood images.  Several research projects had large libraries of training images for their respective model.  The dataset is smaller than we hoped.  
 
-<img src="./images/trucks/train/depth_3/img_0070.jpg" alt="drawing" width="400"/> <img src="./images/trucks/train/depth_3/img_0070.jpg" alt="drawing" width="400"/>
+<img src="./images/trucks/train/depth_3/img_0070.jpg" alt="drawing" width="400"/> <img src="./images/people/test/depth_3/img_0086.jpg" alt="drawing" width="400"/>
 
 
 ## Image Processing
@@ -23,15 +23,21 @@ In order to train our neural network we required a large quantity and variety of
 ### Gooogle Vision AI
 
 
-<img src="./assets/vision_AI1.png" alt="drawing" width="400"/> <img src="./assets/vision_AI2.png" alt="drawing" width="400"/>
+<img src="./assets/vision_AI4.png" alt="drawing" width="400"/> <img src="./assets/vision_AI3.png" alt="drawing" width="400"/>
 ### VGG16 cNN
 
-<img src="./assets/person_depth_chart.png" alt="drawing" width="400"/> <img src="./assets/truck_depth_chart.png" alt="drawing" width="400"/>
+<img src="./assets/vgg16_neural_network.jpg" alt="drawing" width="900"/> Image Credit: K. Simonyan and A. Zisserman, University of Oxford
+
+
 
 ### Person Submersion Detection
 
-### Truck Submersion
+<img src="./assets/person_depth_chart.png" alt="drawing" width="400"/>
 
+### Truck Submersion Detection
+
+ <img src="./assets/truck_depth_chart.png" alt="drawing" width="400"/>
+ 
 ## Issues
 ---
 1. People can swim
