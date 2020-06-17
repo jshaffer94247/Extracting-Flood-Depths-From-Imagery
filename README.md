@@ -9,7 +9,7 @@ Flooding is one the most common and most destructive forms of natural disaster. 
 
 ## Executive Summary OR Abstract
 ---
-Teaching a computer to detect water much less a water line is something that has troubled for researcher for years per the attached research library.  As a result, we chose to leverage the Google Vision AI to act as an image preprocessor that would identify prerequisite objects and flooding.  By verifying those conditions, we could train a convuluted neural network using VGG16 to identify the level of submersion of those specific objects.  Based on the interpretation of that submersion level we could infer a relative depth of the flood water.
+Teaching a computer to detect water much less a water line is something that has troubled for researcher for years per the attached research library.  As a result, we chose to leverage the Google Vision AI to act as an image preprocessor that would identify prerequisite objects and flooding.  By verifying those conditions, we could train a convulutional neural network(cNN) using VGG16 to identify the level of submersion of those specific objects.  Based on the interpretation of that submersion level we could infer a relative depth of the flood water.
 
 ## Data
 ---
@@ -18,8 +18,15 @@ In order to train our neural network we required a large quantity and variety of
 ## Image Processing
 ---
 
+### Gooogle Vision AI
+
+### VGG16 cNN
+
 <img src="./assets/person_depth_chart.png" alt="drawing" width="400"/> <img src="./assets/truck_depth_chart.png" alt="drawing" width="400"/>
 
+### Person Submersion Detection
+
+### Truck Submersion
 
 ## Issues
 ---
@@ -62,3 +69,5 @@ Project flood level to surrounding area at simliar elevation
 ```
 
 <img src="./assets/ImageFolderStructure.png" alt="drawing" width="900"/>
+
+<img src="./assets/image_test_dir_diagram.png" alt="drawing" width="900"/>
