@@ -8,16 +8,16 @@ https://github.com/cemsaz/google-vision-api-multi-thread
 
 The image folder in the google_vision_api folder must contain those images that are needed to be run through Google Vision.
 
-Start with the 01 google_vision_api.ipymb notebook.  A google API key must be entered on line 4 for the spreadsheet to run. If you wish to run the code, you will need to provide your own Google API key.  The sheet will import the photos from the images file and run those through google vision.
+Start with the *01 google_vision_api.ipymb* notebook.  A google API key must be entered on line 4 for the spreadsheet to run. If you wish to run the code, you will need to provide your own Google API key.  The sheet will import the photos from the images file and run those through google vision.
 
 The sheet should run with the packages previously installed with the exception of google cloud vision. Use:
 
 pip install google-cloud-vision
 
-The 01 google_vision_api.ipynb notebook will export data to the labels.csv sheet in the output folder.  
+The *01 google_vision_api.ipynb* notebook will export data to the labels.csv sheet in the output folder.  
 
-After the labels are exported, open the 02 parse_image_labels.ipynb notebook. This notebook imports the data from the labels.csv. and splits the data into separate dataframes based on the types of labels we are running through the various models.
+After the labels are exported, open the *02 parse_image_labels.ipynb* notebook. This notebook imports the data from the labels.csv and splits the data into separate dataframes based on the types of labels we are running through the various models.
 
-These dataframes tell the user which images should be run through the respective model.
+These dataframes tell the user which images should be run through which model.
 
 Our current model does not finalize this pipeline of taking images from google vision and run them in our model.  It currently stops at splitting them up into different dataframes.  A next step would be to take the images from the api and export them to folders to be used in modeling.
