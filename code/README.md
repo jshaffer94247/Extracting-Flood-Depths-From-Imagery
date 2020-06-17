@@ -7,11 +7,11 @@ Technical Users Guide
 
  `cd Extracting-Flood-Depths-From-Imagery`
 
- 1. Create a virtual environment called 'flood_depths' with     
+ 2. Create a virtual environment called 'flood_depths' with     
 
   `conda env create -f environment.yml`
 
- 1. Activate your environment with
+ 3. Activate your environment with
 
   `conda activate flood_depths`
 
@@ -25,11 +25,11 @@ Advantages of this approach include
 
 This also means that you can retarget the model to train on an expanded flood depth dataset or even another dataset of your own choosing, and you can then also augment your own images.
 
- 1. Start jupyter-notebook from the flood_depths conda environment
+ 4. Start jupyter-notebook from the flood_depths conda environment
 
    `jupyter-notebook`
 
- 1. Open the notebook and follow the instructions to expand the dataset of your choice
+ 5. Open the notebook and follow the instructions to expand the dataset of your choice
 
    -   03_Image_Augmentation_Trucks.ipynb        
    -   06_Image_Augmentation_People.ipynb        
@@ -39,31 +39,31 @@ This also means that you can retarget the model to train on an expanded flood de
 
 Our original plan was to include the finished model(s) in this repo, but file size is problematic (1.5G+). The same was true of the model weight files (512M). This leaves the option of building the model yourself. We have put in the hooks to save the model weight file after it is built, so you will be able to run the predictions notebook after building the model just once. If we are able to compress the weight file(s) and add it to the repo, we will do that later.
 
- 1. Open a model file
+ 6. Open a model file
 
    -   04_Flood_Depth_ModelTraining_Trucks.ipynb    
    -   07_Flood_Depth_ModelTraining_People.ipynb
 
 
- 1. Run all
+ 7. Run all       
     Caution: the model may run for an hour or so depending on your computer's capabilities. The models were originally build on MacBook Pro computers with CPU-only support.
 
- 1. Confirm that the model weights were saved as a *.h5 file
+ 8. Confirm that the model weights were saved as a *.h5 file
 
-     Examples:
-         `model_best_truck_weights.h5`
+     Examples:    
+         `model_best_truck_weights.h5`    
 
-### Predict on new images
+### Predict on new images    
 
-To predict on new images, you will need to place the images into folders according to the structure the tools are expecting. A set of starter folders have been made called "user_images". We suggest that you run the prediction tools on those images first as this will be quick and will show you the pattern.
+To predict on new images, you will need to place the images into folders according to the structure the tools are expecting. A set of starter folders have been made called "user_images". We suggest that you run the prediction tools on those images first as this will be quick and will show you the pattern.    
 
- 1. Confirm that the model weight file was saved in the previous step
- 1. Open the predictions notebook (name includes 'Prediction')    
+ 9. Confirm that the model weight file was saved in the previous step    
+10. Open the predictions notebook (name includes 'Prediction')        
    -   06_Flood_Depth_Prediction_Trucks.ipynb
    -   07_Flood_Depth_Prediction_People.ipynb
 
- 1. Change the User Configurable Items if needed (you may opt to leave it pointing at the test images for the first run)
- 1. Run all
+11. Change the User Configurable Items if needed (you may opt to leave it pointing at the test images for the first run)    
+12. Run all    
 
 Caution: Due to various resource constraints (time, people, training data), the results of this model are not suitable for making life-changing decisions. Using the model to explore machine learning, to making non-binding estimations of flood depths, or for entertainment (Can it predict the depth of the water a horse is standing in?) is acceptable and encouraged.
 
