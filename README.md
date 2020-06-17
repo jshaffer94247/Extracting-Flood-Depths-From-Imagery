@@ -3,23 +3,27 @@
 
 ## Problem Statement
 ---
-Flooding is one the most common and most destructive forms of natural disaster.  Current flood detection and measurement systems lack accuracy and expedience to keep people out of danger.  We built a convuluted Neural Network that leverages uploaded personal photos to provide flood detection and depth measurement to expedite alerts and increase safety.
+Flooding is one of the most common and most destructive forms of natural disasters.  Current flood detection and measurement systems lack accuracy and expedience to keep people out of danger.  We built a Convolutional Neural Network (cNN) that leverages uploaded personal photos to provide flood detection and depth measurement to expedite alerts and increase safety.
 
-**From assignment** Problem Statement: Floods cause damage to infrastructure and homes. The depth of flood waters is a good indicator of the severity of damage. Floods are incredibly difficult to model, and while model outputs are useful to emergency managers, it is crucial to know the actual depth. Social media and news outlets often present pictures of floods. How can this imagery be used to estimate the depth of water in a given area?
-
-## Executive Summary OR Abstract
+## Executive Summary
 ---
-Teaching a computer to detect water much less a water line is something that has troubled for researcher for years per the attached research library.  As a result, we chose to leverage the Google Vision AI to act as an image preprocessor that would identify prerequisite objects and flooding.  By verifying those conditions, we could train a convulutional neural network(cNN) using VGG16 to identify the level of submersion of those specific objects.  Based on the interpretation of that submersion level we could infer a relative depth of the flood water.
+Teaching a computer to detect water much less a water line is something that has troubled researchers for years per the attached research library.  As a result, we chose to leverage the Google Vision AI to act as an image preprocessor that would identify prerequisite objects and flooding.  By verifying those conditions, we could train a Convolutional Neural Network using VGG16 to determine the level of submersion of those specific objects.  Based on the interpretation of that submersion level, we could infer a relative depth of the floodwater.
 
 ## Data
 ---
-In order to train our neural network we required a large quantity and variety of flood images.  Several research projects had large libraries of training images for their respective model
+In order to train our neural network we required a large quantity and variety of flood images.  Several research projects had large libraries of training images for their respective model.  The dataset is smaller than we hoped.  
+
+<img src="./images/trucks/train/depth_3/img_0070.jpg" alt="drawing" width="400"/> <img src="./images/trucks/train/depth_3/img_0070.jpg" alt="drawing" width="400"/>
+
 
 ## Image Processing
 ---
+<img src="./assets/flow_chart.jpg" alt="drawing" width="900"/>
 
 ### Gooogle Vision AI
 
+
+<img src="./assets/vision_AI1.png" alt="drawing" width="400"/> <img src="./assets/vision_AI2.png" alt="drawing" width="400"/>
 ### VGG16 cNN
 
 <img src="./assets/person_depth_chart.png" alt="drawing" width="400"/> <img src="./assets/truck_depth_chart.png" alt="drawing" width="400"/>
