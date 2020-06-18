@@ -11,7 +11,7 @@ Teaching a computer to detect water much less a water line is something that has
 
 ## Data
 ---
-Our neural network required a large quantity and variety of flood images.  Several research projects procured extensive libraries of training images for their respective models. Some provided access to these images, but many did not.   Additionally, since we did not have the same amount of time as the researchers, as mentioned earlier, we selected training images like the ones below with obvious subjects.  This criterion further limited the number of available images for training and testing the models. 
+Our neural network required a large quantity and variety of flood images.  Several research projects procured extensive libraries of training images for their respective models. Some provided access to these images, but many did not.   Additionally, since we did not have the same amount of time as the researchers, as mentioned earlier, we selected training images like the ones below with obvious subjects.  This criterion further limited the number of available images for training and testing the models.
 
 <img src="./images/trucks/train/depth_3/img_0070.jpg" alt="drawing" width="400"/> <img src="./images/people/validate/depth_3/img_0086.jpg" alt="drawing" width="400"/>
 
@@ -37,7 +37,7 @@ For this project, we decided to narrow our object analysis to only people and tr
 ### Truck Submersion Detection
 
  <img src="./assets/truck_depth_chart.png" alt="drawing" width="400"/>
- 
+
 Generally speaking, the VGG16 architecture performed really well despite our relatively small training dataset.  While it only scored 32% accuracy on the exact depth level for trucks,  accuracy jumped to roughly 80% if we increased to the tolerance plus or minus one depth level.  We trained the model on just 160 images that we boosted fivefold through augmentation (i.e., flipping, cropping, and turning).   Therefore, with more training images, we are confident we could considerably improve accuracy on trucks.
 
 ### Person Submersion Detection
@@ -45,12 +45,12 @@ Generally speaking, the VGG16 architecture performed really well despite our rel
 <img src="./assets/person_depth_chart.png" alt="drawing" width="400"/>
 
 Similar to vehicle submersion prediction, the model performed quite admirably on people under the given constraints of time and processor power.  The model accurately predicted the exact depth level 25% of the time and provided a plus or minus one tolerance accuracy improved to 60%.  Unlike the truck model, the people model performed better at predicting people at depth level 0 or 4.
- 
+
 ## Issues
 ---
 1. People can swim
 2. Shortage of training data
-3. 
+3.
 
 another challenge is the definition of some of the levels; what level should we put for truck moving through water where the displacement at the back makes it look like 6", but the "bow wake" at the front bumper makes it look like almost 2 feet?
 
@@ -58,7 +58,7 @@ as others have pointed out, the depth is only for one point in the image, at the
 we also can't rule out that the differentiation is happening because of something like the height of the water in the image, as discovered by Jonna
 
  <img src="./assets/img_0112.jpg" alt="drawing" width="400"/>
- 
+
  <img src="./assets/img_0120.jpg" alt="drawing" width="400"/>
 
 ## Future Improvements
@@ -78,6 +78,8 @@ Project flood level to surrounding area at simliar elevation
 |   |   |__ 01_Google_Vision_API.ipnyb
 |   |   |__ 02_Parse_Image_Labels.ipynb
 |   |   |__ README.md
+|   |   |__ images
+|   |   |   |__ image_to_label.jpg (any number of images to use with the API)
 |   |   |__ output
 |   |   |   |__ labels.csv
 |   |__ 03_Image_Augmentation_Trucks.ipnyb
