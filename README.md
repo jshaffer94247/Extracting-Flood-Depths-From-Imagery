@@ -36,13 +36,13 @@ For this project, we decided to narrow our object analysis to only people and tr
 
 ### Truck Submersion Detection
 
- <img src="./assets/truck_depth_chart.png" alt="drawing" width="400"/>
+ <img src="./assets/truck_depth_chart.png" alt="drawing" width="500"/>
 
 Generally speaking, the VGG16 architecture performed really well despite our relatively small training dataset.  While it only scored 32% accuracy on the exact depth level for trucks,  accuracy jumped to roughly 80% if we increased to the tolerance plus or minus one depth level.  We trained the model on just 160 images that we boosted fivefold through augmentation (i.e., flipping, cropping, and turning).   Therefore, with more training images, we are confident we could considerably improve accuracy on trucks.
 
 ### Person Submersion Detection
 
-<img src="./assets/person_depth_chart.png" alt="drawing" width="400"/>
+<img src="./assets/person_depth_chart.png" alt="drawing" width="500"/>
 
 Similar to vehicle submersion prediction, the model performed quite admirably on people under the given constraints of time and processor power.  The model accurately predicted the exact depth level 25% of the time and provided a plus or minus one tolerance accuracy improved to 60%.  Unlike the truck model, the people model performed better at predicting people at depth level 0 or 4.
 
@@ -50,7 +50,12 @@ Similar to vehicle submersion prediction, the model performed quite admirably on
 ---
 1. People can swim
 2. Shortage of training data
-3.
+3. Bow wake
+4. Personal computer processing power
+5. Complex images
+6. Microterrain
+7. Time constraint
+
 
 another challenge is the definition of some of the levels; what level should we put for truck moving through water where the displacement at the back makes it look like 6", but the "bow wake" at the front bumper makes it look like almost 2 feet?
 
