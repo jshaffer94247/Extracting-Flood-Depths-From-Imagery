@@ -58,12 +58,13 @@ Similar to vehicle submersion prediction, the model performed quite admirably on
 7. Time constraint
 8. Definition of levels
 
-**Bow wake example**
+**Bow wake example**    
+
 What level should we assign for a truck moving through water where the displacement at the back makes it look like 6", but the "bow wake" at the front bumper makes it look like almost 2 feet? As other researchers have pointed out, depth is only for one point in the image, at the point of that particular object. Complex images, tilted vehicles, multiple vehicles, and displaced water are all interesting complications.
 
 |Bow wake - front view| Bow wake - side view|
 |---|---|
-|<img src="./assets/img_0112.jpg" alt="drawing" width="300"/>| <img src="./assets/img_0120.jpg" alt="drawing" width="420"/>|
+|<img src="./assets/img_0112.jpg" alt="drawing" width="300"/>| <img src="./assets/img_0120.jpg" alt="drawing" width="440"/>|
 
 
  <img src="./assets/img_0112.jpg" alt="drawing" width="400"/>
