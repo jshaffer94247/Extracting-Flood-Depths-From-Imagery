@@ -54,9 +54,9 @@ Similar to vehicle submersion prediction, the model performed quite admirably on
 3. Bow wake
 4. Personal computer processing power
 5. Complex images
-6. Microterrain
+6. Micro terrain
 7. Time constraint
-8. Definition of levels
+8. Definition of depth levels
 
 **Bow wake example**    
 
@@ -78,6 +78,27 @@ What level should we assign for a truck moving through water where the displacem
 ## Project Organization
 ---
 ```
+|__ assets
+|   |__flow_chart.jpg
+|   |__image_test_dir_diagram.png
+|   |__ImageFolderStructure.png
+|   |__img_0080.jpg
+|   |__img_0099.jpg
+|   |__img_0110.jpg
+|   |__img_0112.jpg
+|   |__img_0120.jpg
+|   |__people_A3_P3_person_and_truck.png
+|   |__person_depth_chart.png
+|   |__truck_A1_P1_bow_wake.png
+|   |__truck_A2_P2_person_and_truck.png
+|   |__truck_A3_P2_slanted.png
+|   |__truck_depth_chart.png
+|   |__truck_result_woman_on_vehicle.png
+|   |__vgg16_neural_network.jpg
+|   |__vision_AI1.png
+|   |__vision_AI2.png
+|   |__vision_AI3.png
+|   |__vision_AI4.png
 |__ code
 |   |__ google-vision-api
 |   |   |__ 01_Google_Vision_API.ipnyb
