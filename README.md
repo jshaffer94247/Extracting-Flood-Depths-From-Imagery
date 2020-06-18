@@ -57,10 +57,14 @@ Similar to vehicle submersion prediction, the model performed quite admirably on
 6. Microterrain
 7. Time constraint
 8. Definition of levels
-    Example: what level should we assign for truck moving through water where the displacement at the back makes it look like 6", but the "bow wake" at the front bumper makes it look like almost 2 feet?
+
+Example: what level should we assign for truck moving through water where the displacement at the back makes it look like 6", but the "bow wake" at the front bumper makes it look like almost 2 feet?
 
 As others have pointed out, depth is only for one point in the image, at the point of that particular object, so complex photos with multiple trucks sitting in different amounts of water or being different sized trucks may be problematic
 
+|Bow wake - front view| Bow wake - side view|
+|---|---|
+|<img src="./assets/img_0112.jpg" alt="drawing" width="400"/>| <img src="./assets/img_0120.jpg" alt="drawing" width="400"/>|
 
  <img src="./assets/img_0112.jpg" alt="drawing" width="400"/>
 
