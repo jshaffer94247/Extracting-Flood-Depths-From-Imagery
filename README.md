@@ -122,8 +122,6 @@ What level should we assign for a truck moving through water where the displacem
 |__ README.md
 ```
 
-<img src="./assets/ImageFolderStructure.png" alt="drawing" width="900"/>
-
 <img src="./assets/image_test_dir_diagram.png" alt="drawing" width="900"/>
 
 ## Project Team
