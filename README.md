@@ -64,7 +64,7 @@ As others have pointed out, depth is only for one point in the image, at the poi
 
 |Bow wake - front view| Bow wake - side view|
 |---|---|
-|<img src="./assets/img_0112.jpg" alt="drawing" width="400"/>| <img src="./assets/img_0120.jpg" alt="drawing" width="400"/>|
+|<img src="./assets/img_0112.jpg" alt="drawing" width="300"/>| <img src="./assets/img_0120.jpg" alt="drawing" width="400"/>|
 
  <img src="./assets/img_0112.jpg" alt="drawing" width="400"/>
 
@@ -75,7 +75,7 @@ As others have pointed out, depth is only for one point in the image, at the poi
 * Extract latitude and longitude from EXIF OR user input
 * Determine elevation based on location
 * Project flood level to surrounding area at similar elevation
-* Explore image variety; ensure model isn't using a something like the height of the water in the image
+* Explore image variety to ensure model isn't using a false reference (color of truck, height of water in image)
 
 
 
