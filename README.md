@@ -64,12 +64,7 @@ What level should we assign for a truck moving through water where the displacem
 
 |Bow wake - front view| Bow wake - side view|
 |---|---|
-|<img src="./assets/img_0112.jpg" alt="drawing" width="300"/>| <img src="./assets/img_0120.jpg" alt="drawing" width="440"/>|
-
-
- <img src="./assets/img_0112.jpg" alt="drawing" width="400"/>
-
- <img src="./assets/img_0120.jpg" alt="drawing" width="400"/>
+|<img src="./assets/img_0112.jpg" alt="drawing" width="300"/>| <img src="./assets/img_0120.jpg" alt="drawing" width="460"/>|
 
 ## Future Improvements
 ---
@@ -112,7 +107,4 @@ What level should we assign for a truck moving through water where the displacem
 
 ## Project Team
 
-Jamie Shaffer
-Josh Kuehl
-Jonna Pander
-Clint Hoke
+Jamie Shaffer - Josh Kuehl - Jonna Pander - Clint Hoke
