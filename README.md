@@ -24,38 +24,27 @@ Our neural network required a large quantity and variety of flood images.  Sever
 
 Google Vision AI is accessible through a Python API.   It is the same AI that powers Google Lens.  Google designed the  AI to identify every object in an image and also identify labels for the scene.  Then it provides accuracy predictions for those interpretations.  The images below give an example of the output.  Google does not charge for the first 1,000 calls to the AI, and after it is $1.50/1,000 calls.  We used this API as a pre-filter to detect flooding and a person, truck, or both in the photograph.
 
-<img src="./assets/vision_AI4.png" alt="drawing" width="400"/> <img src="./assets/vision_AI3.png" alt="drawing" width="400"/>
+<img src="./assets/Vision_AI4.png" alt="drawing" width="400"/> <img src="./assets/Vision_AI3.png" alt="drawing" width="400"/>
 ### VGG16 cNN
 
-We selected the VGG16 architecture [ref to original paper]. The advantage of the VGG16 architecture is that it performs with high accuracy for image classification and has a relatively simple architecture to implement. On the downside, achieving a high level of accuracy is time and computationally expensive.  Similarly, both the model and the files that it produces are huge.
+We selected the VGG16 architecture [https://neurohive.io/en/popular-networks/vgg16/]. The advantage of the VGG16 architecture is that it performs with high accuracy for image classification and has a relatively simple architecture to implement. On the downside, achieving a high level of accuracy is time and computationally expensive.  Similarly, both the model and the files that it produces are huge.
 
+#### VGG16 cNN Architecture
 <img src="./assets/vgg16_neural_network.jpg" alt="drawing" width="900"/> Image Credit: K. Simonyan and A. Zisserman, University of Oxford
+
+For this project, we decided to narrow our object analysis to only people and trucks to demonstrate proof of concept.  We chose people because they are commonly photographed in floodwaters, which makes training a model more manageable.  For trucks, we took a different approach; we wanted to train a model on a type of object that no other researchers had used before.
 
 ### Truck Submersion Detection
 
-better results on level 0,1,2 than the deeper water
-If we only count EXACT results, then the accuracy is 32%
-but, if we look at 'off by 1' as close enough, then the accuracy is more like 72/90, or about 80% which sounds a lot more hopeful for the future of this method
-this model runs in about an hour on a macbook pro 2.4GHz, 8-core intel i9, with 32 GB RAM
-the original paper on the VGG16 indicates that they trained for weeks and with high end GPUs; we did not have enough images for that to make sense nor enough time to run that long
-trucks had ~160 base images, x5 after augmentation; augmentation made a huge difference, I would expect more images to continue to improve the model
-I don't think we've reached the end of what this model can do for us; not sure if that's the same for people or not
-
  <img src="./assets/truck_depth_chart.png" alt="drawing" width="400"/>
+ 
+Generally speaking, the VGG16 architecture performed really well despite our relatively small training dataset.  While it only scored 32% accuracy on the exact depth level for trucks,  accuracy jumped to roughly 80% if we increased to the tolerance plus or minus one depth level.  We trained the model on just 160 images that we boosted fivefold through augmentation (i.e., flipping, cropping, and turning).   Therefore, with more training images, we are confident we could considerably improve accuracy on trucks.
 
 ### Person Submersion Detection
 
-People Model
-Baseline accuracy: 23.5%
-Best accuracy: 25%
-Accuracy if included depths off by 1 as accurate: 60%
-Runs in 2 hours with MacPro 2.4 GHz Quad-Core Intel Core i5, 8GB RAM
-Better at predicting 0s and 4s
-323 training images, 263 of them were augmented
-
 <img src="./assets/person_depth_chart.png" alt="drawing" width="400"/>
 
-
+Similar to vehicle submersion prediction, the model performed quite admirably on people under the given constraints of time and processor power.  The model accurately predicted the exact depth level 25% of the time and provided a plus or minus one tolerance accuracy improved to 60%.  Unlike the truck model, the people model performed better at predicting people at depth level 0 or 4.
  
 ## Issues
 ---
