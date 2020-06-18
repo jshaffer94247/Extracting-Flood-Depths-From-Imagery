@@ -27,7 +27,7 @@ Google Vision AI is accessible through a Python API.   It is the same AI that po
 <img src="./assets/vision_AI4.png" alt="drawing" width="400"/> <img src="./assets/vision_AI3.png" alt="drawing" width="400"/>
 ### VGG16 cNN
 
-We selected the VGG16 architecture [ref to original paper]. The advantages of this  model are that it has performed with a high level of accuracy for image classification and has a relatively simple architecture to implement. Disadvantages include the time it can take to train to that high level of accuracy and the size of both the model and model weight files that it produces.
+We selected the VGG16 architecture [ref to original paper]. The advantage of the VGG16 architecture is that it performs with high accuracy for image classification and has a relatively simple architecture to implement. On the downside, achieving a high level of accuracy is time and computationally expensive.  Similarly, both the model and the files that it produces are huge.
 
 <img src="./assets/vgg16_neural_network.jpg" alt="drawing" width="900"/> Image Credit: K. Simonyan and A. Zisserman, University of Oxford
 
