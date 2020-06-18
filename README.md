@@ -1,6 +1,7 @@
 
 # Extracting Flood Depths From Imagery
 
+
 ## Problem Statement
 ---
 Flooding is one of the most common and most destructive forms of natural disasters.  Current flood detection and measurement systems lack accuracy and expedience to keep people out of danger.  We built a Convolutional Neural Network (cNN) that leverages uploaded personal photos to provide flood detection and depth measurement to expedite alerts and increase safety.
@@ -55,12 +56,11 @@ Similar to vehicle submersion prediction, the model performed quite admirably on
 5. Complex images
 6. Microterrain
 7. Time constraint
+8. Definition of levels
+    Example: what level should we assign for truck moving through water where the displacement at the back makes it look like 6", but the "bow wake" at the front bumper makes it look like almost 2 feet?
 
+As others have pointed out, depth is only for one point in the image, at the point of that particular object, so complex photos with multiple trucks sitting in different amounts of water or being different sized trucks may be problematic
 
-another challenge is the definition of some of the levels; what level should we put for truck moving through water where the displacement at the back makes it look like 6", but the "bow wake" at the front bumper makes it look like almost 2 feet?
-
-as others have pointed out, the depth is only for one point in the image, at the point of that particular object, so complex photos with multiple trucks sitting in different amounts of water or being different sized trucks may be problematic
-we also can't rule out that the differentiation is happening because of something like the height of the water in the image, as discovered by Jonna
 
  <img src="./assets/img_0112.jpg" alt="drawing" width="400"/>
 
@@ -68,10 +68,10 @@ we also can't rule out that the differentiation is happening because of somethin
 
 ## Future Improvements
 ---
-Extract latitude and longitude from EXIF OR user input
-Determine elevation based on location
-Project flood level to surrounding area at simliar elevation
-
+* Extract latitude and longitude from EXIF OR user input
+* Determine elevation based on location
+* Project flood level to surrounding area at similar elevation
+* Explore image variety; ensure model isn't using a something like the height of the water in the image
 
 
 
@@ -104,3 +104,10 @@ Project flood level to surrounding area at simliar elevation
 <img src="./assets/ImageFolderStructure.png" alt="drawing" width="900"/>
 
 <img src="./assets/image_test_dir_diagram.png" alt="drawing" width="900"/>
+
+## Project Team
+
+Jamie Shaffer
+Josh Kuehl
+Jonna Pander
+Clint Hoke
